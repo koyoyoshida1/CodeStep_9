@@ -1,0 +1,50 @@
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+.inner {
+  width: 100%;
+  padding: 0 1.6vw;
+  margin: 0 auto;
+}
+
+// トプ画像の画面の高さに合わせる
+// headerの高さが約80pxであるから100vhから８vh分だけマイナスする
+#top {
+  margin-bottom: 12vh;
+
+  img {
+    height: 92vh;
+    object-fit: cover;
+  }
+}
+
+.ttl {
+  font-size: 2.25rem;
+  font-weight: normal;
+  margin-bottom: 5vh;
+  // タイトル,ロゴはlineheightを意識する
+  line-height: 1;
+  
+  &_main {
+    // block形成することで改行できる
+    margin-bottom: 1vh;
+    display: block;
+    letter-spacing: 0.65rem;
+    
+    &_sub {
+      margin-bottom: 3.6vh;
+      font-size: 0.875rem;
+      display: block;
+    }
+  }
+}
+
+h2::after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: $black;
+  display: block;
+}

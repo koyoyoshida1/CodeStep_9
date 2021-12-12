@@ -1,0 +1,492 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: #000;
+  font-size: 0.875rem;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.inner {
+  width: 100%;
+  padding: 0 1.6vw;
+  margin: 0 auto;
+}
+
+#top {
+  margin-bottom: 12vh;
+}
+
+#top img {
+  height: 92vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ttl {
+  font-size: 2.25rem;
+  font-weight: normal;
+  margin-bottom: 5vh;
+  line-height: 1;
+}
+
+.ttl_main {
+  margin-bottom: 1vh;
+  display: block;
+  letter-spacing: 0.65rem;
+}
+
+.ttl_main_sub {
+  margin-bottom: 3.6vh;
+  font-size: 0.875rem;
+  display: block;
+}
+
+h2::after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: #000;
+  display: block;
+}
+
+header {
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .inner .logo {
+  width: 100px;
+  line-height: 1px;
+  margin-right: 6vw;
+}
+
+header .inner .logo a {
+  display: block;
+}
+
+header .inner ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .inner ul li {
+  margin-right: 3vw;
+}
+
+header .inner ul li :last-child {
+  margin-right: 0;
+}
+
+header .btn {
+  width: 200px;
+  height: 8vh;
+  line-height: 8vh;
+  background-color: #000;
+  color: #fff;
+  font-size: 0.75rem;
+  display: inline-block;
+  text-align: center;
+}
+
+header .btn :hover {
+  background-color: #333;
+}
+
+#news {
+  margin-bottom: 12vh;
+}
+
+#news ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#news ul li {
+  width: calc(100%/3);
+  border-right: solid 1px #000;
+  padding: 1vw 2vh;
+}
+
+#news li:first-child {
+  padding-left: 0;
+}
+
+#news li:last-child {
+  padding-right: 0;
+  border-right: none;
+}
+
+#news .news_item {
+  margin-bottom: 1.6vh;
+}
+
+#news .news_item span {
+  width: 50px;
+  height: 20px;
+  line-height: 20px;
+  margin-left: 1vw;
+  background-color: #000;
+  display: inline-block;
+  color: #fff;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+#about {
+  margin-bottom: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#about .img {
+  width: 55%;
+}
+
+#about .img img {
+  width: 100%;
+  height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#about .item {
+  width: 45%;
+  padding: 18vh 5vw 0;
+}
+
+#about .item p {
+  line-height: 2.2;
+}
+
+#business {
+  margin-bottom: 12vh;
+}
+
+#business .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10%;
+}
+
+#business .flex_l {
+  width: 46%;
+  margin-top: 10vh;
+}
+
+#business .flex_l_list {
+  margin-bottom: 5vh;
+}
+
+#business .flex_r {
+  width: 46%;
+}
+
+#business .flex_r_list {
+  margin-bottom: 5vh;
+}
+
+#business .flex .txt {
+  font-weight: bold;
+  margin: 0 0 1vh 1.8vw;
+  position: relative;
+}
+
+#business .flex .txt::before {
+  content: "";
+  width: 8px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: -1.8vw;
+}
+
+#company {
+  height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+#company .item {
+  background-color: #fff;
+  position: absolute;
+  padding: 10vh 8% 10vh 6%;
+  width: 55%;
+  top: 0;
+  left: 0;
+}
+
+#company .item dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#company .item dl dt {
+  width: 20%;
+  margin-top: 1vh;
+}
+
+#company .item dl dt:first-of-type {
+  margin-top: 0;
+}
+
+#company .item dl dd {
+  width: 80%;
+  margin-top: 1vh;
+}
+
+#company .item dl dd:first-of-type {
+  margin-top: 0;
+}
+
+#company .item .add {
+  width: 100%;
+  margin-left: 8vw;
+}
+
+#company .img {
+  width: 53%;
+  position: absolute;
+  top: 11.5vh;
+  right: 0;
+}
+
+#company .img img {
+  width: 100%;
+  height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  background-color: #fff;
+}
+
+footer .footer_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4vh 0;
+}
+
+footer .footer_item .logo {
+  width: 100px;
+  line-height: 1px;
+  margin-right: 0;
+}
+
+footer .copyright {
+  font-size: 0.625rem;
+  padding-bottom: 2vh;
+}
+
+@media screen and (max-width: 900px) {
+  .ttl {
+    margin-bottom: 3.4vh;
+  }
+  .ttl_sub {
+    margin-bottom: 2.4vh;
+  }
+  header .inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  header .inner .logo {
+    width: 80px;
+    margin: 0.8vh 0;
+  }
+  header .btn {
+    display: none;
+  }
+  #top {
+    margin-bottom: 8vh;
+  }
+  #news ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #news ul li {
+    width: 100%;
+    border-right: none;
+    padding: 1vh 0;
+    margin-bottom: 2vh;
+  }
+  #news ul li:last-child {
+    margin-bottom: 0;
+  }
+  #about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 8vh;
+  }
+  #about .img {
+    width: 100%;
+    margin-bottom: 3vh;
+  }
+  #about .item {
+    width: 100%;
+    padding: 0 1.6vw;
+  }
+  #business {
+    margin-bottom: 8vh;
+  }
+  #business .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  #business .flex_l {
+    width: 100%;
+    margin: 0 0 3vw 0;
+  }
+  #business .flex_l_list {
+    text-align: center;
+    margin-bottom: 3vh;
+  }
+  #business .flex_l_list_1 {
+    text-align: center;
+    margin-bottom: 3vh;
+  }
+  #business .flex_r {
+    width: 100%;
+  }
+  #business .flex_r_list {
+    text-align: center;
+    margin-bottom: 3vh;
+  }
+  #business .flex_r_list_1 {
+    text-align: center;
+    margin-bottom: 3vh;
+  }
+  #business .flex .txt {
+    text-align: left;
+  }
+  #company {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: static;
+  }
+  #company .item {
+    position: static;
+    width: 100%;
+    padding: 4vh 2vw;
+    margin-bottom: 2vh;
+  }
+  #company .item dl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #company .item dl dt {
+    width: 100%;
+    margin-top: 2vh;
+  }
+  #company .item dl dd {
+    width: 100%;
+    margin-top: 0.5vh;
+    padding-left: 1.4vw;
+  }
+  #company .item dl dd:first-of-type {
+    margin-top: 0.5vh;
+  }
+  #company .item dl .add {
+    margin-left: 0;
+  }
+  #company .img {
+    width: 100%;
+    padding: 0;
+    position: static;
+  }
+  #footer .footer_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #footer .footer_item .logo {
+    margin-bottom: 1vh;
+    width: 80px;
+  }
+}

@@ -1,0 +1,158 @@
+@media screen and (max-width: 900px) {
+
+  .ttl {
+    margin-bottom: 3.4vh;
+
+    &_sub {
+      margin-bottom: 2.4vh;
+    }
+  }
+  header {
+    .inner {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .logo {
+        width: 80px;
+        margin: 0.8vh 0;
+      }
+    }
+    
+    .btn{
+      display: none;
+    }
+  }
+
+  #top {
+    margin-bottom: 8vh;
+  }
+
+  #news {
+    ul{
+      flex-direction: column;
+      
+      li {
+        width: 100%;
+        border-right: none;
+        padding: 1vh 0;
+        margin-bottom: 2vh;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  #about {
+    flex-direction: column;
+    margin-bottom: 8vh;
+
+    .img {
+      width: 100%;
+      margin-bottom: 3vh;
+    }
+
+    .item {
+      width: 100%;
+      padding: 0 1.6vw;
+    }
+  }
+
+  #business {
+    margin-bottom: 8vh;
+
+    .flex {
+      flex-direction: column;
+      padding: 0;
+
+      &_l {
+        width: 100%;
+        margin: 0 0 3vw 0;
+
+        &_list {
+          text-align: center;
+          margin-bottom: 3vh;
+
+          &_1 {
+            text-align: center;
+            margin-bottom: 3vh;
+          }
+        }
+      }
+
+      &_r {
+        width: 100%;
+
+        &_list {
+          text-align: center;
+          margin-bottom: 3vh;
+          
+          &_1 {
+            text-align: center;
+            margin-bottom: 3vh;
+          }
+        }
+      }
+
+      .txt {
+        text-align: left;
+      }
+    }
+  }
+
+  #company {
+    height: auto;
+    flex-direction: column;
+    position: static;
+    // relativeを解除
+
+    .item {
+      position: static;
+      width: 100%;
+      padding: 4vh 2vw;
+      margin-bottom: 2vh; 
+
+      dl {
+        flex-direction: column;
+
+        dt {
+          width: 100%;
+          margin-top: 2vh;
+        }
+
+        dd {
+          width: 100%;
+          margin-top: 0.5vh;
+          padding-left: 1.4vw;
+
+          &:first-of-type {
+            margin-top: 0.5vh;
+          }
+        }
+
+        .add {
+          margin-left: 0;
+        }
+      }
+    }
+
+    .img {
+      width: 100%;
+      padding: 0;
+      position: static;
+    }
+  }
+
+  #footer {
+    .footer_item {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .logo {
+        margin-bottom: 1vh;
+        width: 80px;
+      }
+    }
+  }
+}

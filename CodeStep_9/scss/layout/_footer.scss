@@ -1,0 +1,21 @@
+footer {
+  background-color: #fff;
+
+
+  .footer_item {
+    @include flex;
+    justify-content: space-between;
+    padding: 4vh 0;
+    
+    .logo {
+      width: 100px;
+      line-height: 1px;
+      margin-right: 0;
+    }
+  }
+
+  .copyright {
+    font-size: 0.625rem;
+    padding-bottom: 2vh;
+  }
+}

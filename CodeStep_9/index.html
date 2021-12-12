@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Comparatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Web Entertainment Design</title>
+    <meta name="description" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twiiter:site" content="Twitterアカウントをいれる">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta property="og:url" content="https://○○.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PHOTO BOOK">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="PHOTO BOOK">
+    <meta property="og:img" content="https://○○.com/img/○○">
+    <link rel="icon" type="img/favicon.ico" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180×180" href="">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+  <body>
+    <!-- お問い合わせフォームは別の要素として分類する -->
+    <header id="header">
+      <div class="inner">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="img/logo.svg" alt="ロゴ画像">
+          </a>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#business">BUSINESS</a></li>
+            <li><a href="#company">COMPANY</a></li>
+          </ul>
+        </nav>
+      </div>
+      <a class="btn" href="#">お問い合わせ</a>
+    </header>
+    <main>
+      <section id="top">
+        <img src="img/mainvisual.jpg" alt="トップ画像">
+      </section>
+
+      <section id="news" class="inner">
+        <!-- 図のような見出しの作り方の典型文 -->
+        <h2 class="ttl">
+          <span class="ttl_main">NEWS</span>
+          <span class="ttl_main_sub">ニュース</span>
+        </h2>
+        <ul>
+          <li>
+            <div class="news_item">
+              <!-- 時間の書き方<time></time>を使う -->
+              <time datetime="2021.09.07">2021.09.07</time>
+              <span>NEWS</span>
+            </div>
+            <p>吉田公洋東工大大学院に無事合格。</p>
+          </li>
+          <li><div class="news_item">
+            <time datetime="2021.08.17">2021.08.17</time>
+            <span>PRESS</span>
+          </div>
+          <p>吉田公洋東工大大学院の入試を受ける</p></li>
+          <li>
+            <div class="news_item">
+              <time datetime="2021.05.06">2021.05.06</time>
+              <span>NEWS</span>
+            </div>
+            <p>吉田公洋大学院試受験勉強を始める</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="about">
+        <div class="img">
+          <img src="img/about.jpg" alt="概要">
+        </div>
+        <div class="item">
+          <h2 class="ttl">
+            <span class="ttl_main">ABOUT</span>
+            <span class="ttl_main_sub">私たちについて</span>
+          </h2>
+          <p>テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト</p>
+          <p>テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト</p>
+          <p>テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト</p>
+        </div>
+      </section>
+
+      <section id="business" class="inner">
+        <h2 class="ttl">
+          <span class="ttl_main">BUSINESS</span>
+          <span class="ttl_main_sub">事業内容</span>
+        </h2>
+        <div class="flex">
+          <!-- 右と左に分ける -->
+          <div class="flex_l">
+            <div class="flex_l_list">
+              <p class="txt">
+                web制作・マーケティング
+              </p>
+              <img src="img/business1.jpg" alt="">
+            </div>
+            <div class="flex_l_list_1">
+              <p class="txt">
+                インターネットメディア事業
+              </p>
+              <img src="img/business2.jpg" alt="">
+            </div>
+          </div>
+          <div class="flex_r">
+            <div class="flex_r_list">
+              <p class="txt">
+                プロモーション企画・制作
+              </p>
+              <img src="img/business3.jpg" alt="">
+            </div>
+            <div class="flex_r_list_1">
+              <p class="txt">
+                ソーシャル企画・運営
+              </p>
+              <img src="img/business4.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="company" class="inner">
+        <div class="item">
+          <h2 class="ttl">
+            <span class="ttl_main">COMPANY</span>
+            <span class="ttl_main_sub">会社情報</span>
+          </h2>
+          <dl>
+            <dt>会社名</dt>
+            <dd>ウェブエンターテイメントデザイン株式会社</dd>
+
+            <dt>所在地</dt>
+            <dd>東京都渋谷区桜丘町99-9 West Building 3F</dd>
+
+            <dt>代表</dt>
+            <dd>吉田 公洋</dd>
+
+            <dt>設立</dt>
+            <dd>2021年8月17日</dd>
+
+            <dt>資本金</dt>
+            <dd>3,000,000円</dd>
+
+            <dt>事業内容</dt>
+            <dd>Web制作・マーケティング</dd>
+            <dd class="add">インターネットメディア事業</dd>
+            <dd class="add">プロモーション企画・制作</dd>
+            <dd class="add">ソーシャル企画・運営</dd>
+          </dl>
+        </div>
+        <div class="img">
+          <img src="img/company.jpg" alt="">
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="inner">
+      <div class="footer_item">
+        <div class="logo">
+          <img src="img/logo.svg" alt="ロゴ画像">
+        </div>
+        <div class="footer_item_list">
+          <p>
+            Web Entertainment Design Inc.<br>
+            West Building 3F<br>
+            9-99 Sakuragaokacho Shibuya-ku<br>
+            Tokyo, Japan 150-0031<br>
+          </p>
+          <p>
+            T/99-9999-9999
+          </p>
+        </div>
+      </div>
+      <p class="copyright">
+        &copy; Web Entertainment Design Inc.
+      </p>
+    </footer>
+  </body>
+</html>

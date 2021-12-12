@@ -1,0 +1,56 @@
+#company {
+  height: 75vh;
+  @include flex;
+  position: relative;
+
+  .item {
+    background-color: $white;
+    position: absolute;
+    padding: 10vh 8% 10vh 6%;
+    width: 55%;
+    // top,leftを使用することでinnerのmarginを無視できる
+    top: 0;
+    left: 0;
+
+    dl {
+      @include flex;
+      flex-wrap: wrap;
+
+      dt{
+        width: 20%;
+        margin-top: 1vh;
+
+        // first-childでも可能
+        &:first-of-type {
+          margin-top: 0;
+        }
+      }
+
+      dd {
+        width: 80%;
+        margin-top: 1vh;
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+      }
+    }
+    .add {
+      width: 100%;
+      margin-left: 8vw;
+    }
+  }
+
+  .img {
+    width: 53%;
+    position: absolute;
+    top: 11.5vh;
+    right: 0;
+
+    img {
+      width: 100%;
+      height: 40vh;
+      object-fit: cover;
+    }
+  }
+}

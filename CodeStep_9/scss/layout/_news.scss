@@ -1,0 +1,39 @@
+#news {
+  margin-bottom: 12vh;
+
+  ul {
+    @include flex;
+
+    li {
+      width: calc(100%/3);
+      border-right: solid 1px $black;
+      padding: 1vw 2vh;
+    }
+  }
+
+  li:first-child {
+    padding-left: 0;
+  }
+
+  li:last-child {
+    padding-right: 0;
+    border-right: none;
+  }
+
+  .news_item {
+    margin-bottom: 1.6vh;
+
+    span {
+      // 定型分なので覚える勢いで
+      width: 50px;
+      height: 20px;
+      line-height: 20px;
+      margin-left: 1vw;
+      background-color: $black;
+      display: inline-block;
+      color: $white;
+      font-size: 0.75rem;
+      text-align: center;
+    }
+  }
+}

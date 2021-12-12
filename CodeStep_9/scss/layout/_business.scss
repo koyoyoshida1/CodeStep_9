@@ -1,0 +1,43 @@
+#business {
+
+  margin-bottom: 12vh;
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+
+    &_l {
+      width: 46%;
+      margin-top: 10vh;
+
+      &_list {
+        margin-bottom: 5vh;
+      }
+    }
+
+    &_r {
+      width: 46%;
+
+      &_list {
+        margin-bottom: 5vh;
+      }
+    }
+
+    .txt {
+      font-weight: bold;
+      margin: 0 0 1vh 1.8vw;
+      position: relative;
+
+      // last-childも&を忘れずに！！
+      &::before {
+        content: "";
+        width: 8px;
+        height: 1px;
+        background-color: $black;
+        position: absolute;
+        top: 50%;
+        left: -1.8vw;
+      }
+    }
+  }
+}

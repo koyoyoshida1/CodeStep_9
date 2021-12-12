@@ -1,0 +1,55 @@
+header {
+  height: 8vh;
+  // ３つの子要素を横展開
+  @include flex;
+  justify-content: space-between;
+
+  .inner {
+    // ロゴとnavを横展開
+    @include flex;
+    // ヘッダーのロゴ配置の典型文なので描けるようにしておくこと
+    .logo {
+      width: 100px;
+      // ロゴ画像を見たらline-heightを意識する
+      // ロゴの行間の余白を指定する
+      line-height: 1px;
+      margin-right: 6vw;
+
+      a {
+        display: block;
+      }
+    }
+
+    ul {
+      // liを横展開
+      @include flex;
+
+      li {
+        margin-right: 3vw;
+
+        :last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .btn {
+    // 幅はロゴの2倍くらい 高さはヘッダー要素と同じ
+    // ロゴやヘッダーに使うbtn等はline-heightを意識する
+    width: 200px;
+    height: 8vh;
+    line-height: 8vh;
+    background-color: $black;
+    color: $white;
+    font-size: 0.75rem;
+    // インラインブロック要素を作成することで　
+    // 幅&高さを指定でき直感的なコーディングができ便利
+    display: inline-block;
+    text-align: center;
+
+    :hover {
+      background-color: $black1;
+    }
+  }
+}
